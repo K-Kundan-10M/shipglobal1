@@ -1,0 +1,80 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 10px; /* Add padding to prevent content from touching the screen edges on small devices */
+}
+
+.game-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%; /* Allow the container to take full width */
+    max-width: 400px; /* Set a maximum width to keep the design manageable on larger screens */
+}
+
+.Number-guessing{
+    font-size: 1.5rem; /* Use relative units */
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    font-size: 1rem;
+    margin: 5px 0; /* Adjust margins for better spacing on smaller screens */
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%; /* Make buttons full-width for consistency */
+}
+
+.feedback, .attempts, .error-message {
+    margin-top: 20px;
+    font-size: 1.125rem; /* Slightly larger than base font */
+}
+
+.feedback {
+    color: #007bff;
+}
+
+.attempts {
+    color: #6c757d;
+}
+
+.error-message {
+    color: #dc3545;
+}
+
+/* Add media queries for smaller screens */
+@media (max-width: 480px) {
+    .game-container {
+        padding: 15px; /* Adjust padding for smaller screens */
+        font-size: 0.9rem; /* Slightly reduce font size */
+    }
+
+    .scrambled-word {
+        font-size: 1.25rem; /* Adjust font size for smaller screens */
+    }
+
+    button {
+        padding: 8px 15px; /* Adjust button padding for smaller screens */
+    }
+}
